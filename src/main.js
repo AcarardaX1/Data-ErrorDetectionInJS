@@ -27,6 +27,32 @@ export function setupCounter(element) {
 }
 
 //TIP To find text strings in your project, you can use the <shortcut actionId="FindInPath"/> shortcut. Press it and type in <b>counter</b> – you’ll get all matches in one place.
-setupCounter(document.getElementById('counter-value'));
+//setupCounter(document.getElementById('counter-value'));
 
 //TIP There's much more in WebStorm to help you be more productive. Press <shortcut actionId="Shift"/> <shortcut actionId="Shift"/> and search for <b>Learn WebStorm</b> to open our learning hub with more things for you to try.
+
+
+console.log("Hello World!")
+
+let DollarYesterday = 1.15;
+//DollarYesterday = "Seninmk"
+let DollarToday = 1.1;
+console.log(DollarYesterday);
+
+const euroToday = 1.02
+const euroYesterday= 1.05;
+
+console.log(euroToday);
+
+
+//array
+//camelCasing
+//PascalCasing
+let HouseLoan = ["HouseCredit", "realEstateCredit", "Public Servant House Credit", "Private Credit"];
+
+console.log("<ul>")
+for(let i = 0; i<HouseLoan.length;i++) {
+  console.log("<li>"+HouseLoan[i]+"</li>");
+}
+console.log("</ul>");
+
