@@ -2,7 +2,7 @@ let cart = [
 
 {id:1, productName :"Cellulare", quantity:3, unitPrice: 750},
 {id:2, productName :"Computer", quantity:6, unitPrice: 950},
-{id:3, productName :"Coffe Machine", quantity:2, unitPrice: 250}
+{id:3, productName :"Coffee Machine", quantity:2, unitPrice: 250}
 ]
 
 let total = cart.reduce((acc, product)=> acc + product.unitPrice, 0) //acc => accumulator 
@@ -15,11 +15,11 @@ reftest(cart)
 
 console.log(cart)
 
+//A list can be created by HTTPS in Front-End
+console.log("<ul>")  //ul means unordered list
+cart.map(product=>{ 
 
-console.log("<ul>")
-cart.map(product=>{  //Front End'de HTTPS araciligiyla liste olusturur 
-
-    console.log("<li>"+product.productName + " : "+ product.unitPrice*product.quantity + "</li>")
+    console.log("<li>"+product.productName + " : "+ product.unitPrice*product.quantity + "</li>") //li means here listed item
 })
 console.log("</ul>")
 
@@ -27,7 +27,7 @@ console.log("</ul>")
 
 //SPA Single Page Application
 
-//cart.push({id:7, productName :"Headphone", quantity:9, unitPrice: "50"})
+//cart.push({id:7, productName :"Headphone", quantity:9, unitPrice: "50"}) //this might be also an alternative usage if we imply cart
 
 function reftest(basket){
 
